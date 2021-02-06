@@ -10,7 +10,7 @@ SECRET_KEY = 'nlyd^235!&zj(o-t%v1n_ba6zb92nwof_5oudyz1l224+ezb5p'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['bffbook.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['bffbook.herokuapp.com', '127.0.0.1']
 
 SITE_ID = 1
 
@@ -73,14 +73,12 @@ AUTHENTICATION_BACKENDS = [
 WSGI_APPLICATION = 'bffbook.wsgi.application'
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -99,7 +97,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -111,7 +108,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -119,11 +115,11 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(os.path.dirname(
-    BASE_DIR), "static_file")
+    BASE_DIR), "static_cdn", "static_root")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(
-    BASE_DIR), "static_file")
+    BASE_DIR), "static_cdn", "media_root")
 
 
 LOGIN_REDIRECT_URL = '/posts'
