@@ -4,8 +4,9 @@
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
+
   </head>
-  <body>
+  <body >
     {% block body %}
 
     {% if messages %}
@@ -19,7 +20,7 @@
     </div>
     {% endif %}
 
-    <div>
+    <div >
       <strong>Menu:</strong>
       <ul>
         {% if user.is_authenticated %}

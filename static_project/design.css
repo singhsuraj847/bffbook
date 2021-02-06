@@ -203,7 +203,7 @@ section {
 .bannerText {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   transform: translateY(-50%);
   max-width: 700px;
 }
@@ -309,9 +309,8 @@ section {
 .bulb {
   opacity: 0;
   position: absolute;
-  right: 17%;
+  right: 20%;
   top: 50%;
-  width: 500px;
   transform: translateY(-50%);
   animation: fadeIn 1s linear forwards;
   animation-delay: 6s;
@@ -396,224 +395,44 @@ section {
     z-index: 1001;
   }
 }
+.sign {
+  padding: 60px 35px 35px 35px;
+  width: 430px;
+  height: 600px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+.sign > h1 {
+  color: #03a9f4;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.fields {
+  width: 100% !important;
+  padding: 75px 5px 5px 5px;
+}
 
-.fa {
-  font-size: 24px;
+.fields input {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  font-size: 18px !important;
+  color: #555 !important;
+  /* padding: 20px 10px 20px 5px !important; */
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff !important;
+  border-radius: 25px !important;
+  margin-bottom: 30px !important;
+}
+.fields label {
+  padding-bottom: 30px;
 }
 
 .sign-in {
   width: 340px;
-  height: 645px;
+  height: 525px;
   padding: 15px 17px 15px 14px;
   box-shadow: inset -8px -8px 8px 0 rgba(174, 174, 192, 0.25),
-    inset 8px 8px 8px 0 #fff, -8px -8px 24px 0 #fff,
-    8px 8px 24px 0 rgba(174, 174, 192, 0.4);
-  border-radius: 20px;
-  position: absolute;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
-  background: #f0f0f3;
-  box-sizing: border-box;
-  z-index: 1;
-  overflow: hidden;
-}
-.main-page {
-  width: 100%;
-  height: 50%;
-  background-image: url("https://images.unsplash.com/photo-1461723198950-3f65e13bb031?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fHJvYWR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0% 0% 50% 50%/ 0% 0% 30% 30%;
-}
-
-.sign-in-page,
-.sign-up-page {
-  width: 100%;
-  height: 54%;
-}
-
-.cancel {
-  position: absolute !important;
-  left: 50% !important;
-  bottom: -25px !important;
-  transform: translateX(-50%) !important;
-  width: 50px !important;
-  height: 50px !important;
-  background: #f8f8f8 !important;
-  font-size: 1.2rem !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  border-radius: 50% !important ;
-  box-sizing: -2px -2px 10px 0 #fff, 2px 2px 10px 0 rgba(174, 174, 192, 0.4) !important;
-}
-.cancel a i {
-  color: #111;
-}
-.sign-in-page form,
-.sign-up-page form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.sign-in-page input,
-.sign-up-page input {
-  width: 245px !important;
-  height: 40px !important;
-  /* margin: 10px 0px !important; */
-  background: transparent !important;
-  border: none !important;
-  outline: none !important;
-  color: #191919 !important;
-  border-radius: 10px !important;
-  box-shadow: -4px -4px 10px 0 #fff, 4px 4px 10px 0 rgba(174, 174, 192, 0.4) !important;
-  padding: 0px 5px !important;
-}
-.sign-in-page label,
-.sign-up-page label {
-  display: none;
-}
-.sign-in-page #id_remember,
-.sign-up-page #id_remember {
-  display: none;
-}
-.sign-in-page input::placeholder,
-.sign-up-page input::placeholder {
-  letter-spacing: 1px;
-  font-size: 14px;
-}
-.sign-in-page button,
-.sign-up-page button {
-  width: 220px !important;
-  height: 40px !important;
-  margin: 10px 0px !important;
-  border-radius: 20px !important;
-  border: none !important;
-  background: #fff !important;
-  box-shadow: 4px -4px 10px 0 #fff, 4px 4px 10px 0 rgba(174, 174, 192, 0.4) !important;
-  color: #000 i !important;
-  margin-bottom: 60px;
-  outline: none;
-}
-.sign-in-page button:hover,
-.sign-up-page button:hover {
-  background: #ff8111 !important;
-  color: #fff !important;
-  transition: all ease 0.3s !important;
-  outline: none;
-  border: none;
-}
-
-.sign-in-page input:focus,
-.sign-up-page input:focus {
-  box-shadow: inset 4px -4px 10px 0 #fff,
-    inset 4px 4px 10px 0 rgba(174, 174, 192, 0.4) !important;
-}
-.sign-in-page,
-.cancel,
-.sign-up-page {
-  display: none !important;
-}
-
-.main-page {
-  height: 100% !important;
-  border-radius: 20px !important;
-}
-.name {
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  text-align: center !important;
-  color: #fff !important;
-}
-.name h1 {
-  font-size: 2.5rem !important;
-  color: #f8f8f8 !important;
-  margin: 0px !important;
-  letter-spacing: 2px !important;
-}
-.form-btns {
-  position: absolute !important;
-  left: 50% !important;
-  bottom: 40px !important;
-  transform: translateX(-50%) !important;
-  text-align: center !important;
-}
-.s-btn {
-  width: 230px;
-  height: 42px;
-  margin: 5px 0px;
-  border: none;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
-  background: #fff;
-  color: #000;
-}
-
-.form-btns a {
-  color: #fff;
-  letter-spacing: 1px !important;
-  text-decoration: none !important;
-}
-button:active {
-  transform: scale(1.05) !important;
-  outline: none !important;
-}
-
-.active-sign-in .form-btns,
-.active-sign-up .form-btns {
-  display: none !important;
-}
-
-.active-sign-in .main-page,
-.active-sign-up .main-page {
-  height: 36% !important;
-  border-radius: 5% 5% 50% 50%/5% 5% 20% 20% !important;
-  animation: animation1 0.2s linear !important;
-  transition: 1s linear !important;
-}
-.active-sign-in .sign-in-page,
-.active-sign-in .cancel {
-  display: flex !important;
-}
-.active-sign-up .sign-in-page,
-.active-sign-up .cancel {
-  display: flex !important;
-}
-.active-sign-in .cancel i,
-.active-sign-up .cancel i {
-  animation: cancel 0.5s linear !important;
-  transition: 2s linear !important;
-}
-
-@keyframes animation1 {
-  0% {
-    height: 100% !important;
-  }
-  100% {
-    height: 55% !important;
-  }
-}
-
-@keyframes cancel {
-  0% {
-    opacity: 0 !important;
-    transform: rotate(-190deg) !important;
-  }
-  100% {
-    opacity: 1 !important;
-    transform: rotate(0deg) !important;
-  }
+    inset 8px 8px 8px 0 #fff;
 }
