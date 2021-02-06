@@ -7,6 +7,7 @@
 
 
 
+
 <div class="wrapper">
   <div class="header">
     <div class="header-menu">
@@ -39,6 +40,7 @@
   {% if request.user.is_authenticated %}
   <div class="sidebar" style="z-index: 2000;"> 
     <div class="sidebar-menu">
+      <a href="{{path_to_my_profile}}">
       <center class="profile">
         {% if picture.url %}
         <img src="{{picture.url}}" alt="">
@@ -49,6 +51,7 @@
         
           <p>{{ request.user }}</p> 
       </center>
+      </a>
       <li class="item">
         <a href="{{path_to_posts}}" class="menu-btn">
           <i class="fa fa-desktop"></i><span>Posts</span>

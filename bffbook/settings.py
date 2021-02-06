@@ -10,7 +10,7 @@ SECRET_KEY = 'nlyd^235!&zj(o-t%v1n_ba6zb92nwof_5oudyz1l224+ezb5p'
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bffbook.herokuapp.com','127.0.0.1']
 
 SITE_ID = 1
 
@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -118,11 +119,11 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(os.path.dirname(
-    BASE_DIR), "static_cdn", "static_root")
+    BASE_DIR), "static_file")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(
-    BASE_DIR), "static_cdn", "media_root")
+    BASE_DIR), "static_file")
 
 
 LOGIN_REDIRECT_URL = '/posts'

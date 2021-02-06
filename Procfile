@@ -1,1 +1,1 @@
-web: gunicorn bffbook.wsgi
+web: gunicorn bffbook.wsgi --log-file
