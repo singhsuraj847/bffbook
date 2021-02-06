@@ -40,7 +40,13 @@
   <div class="sidebar" style="z-index: 2000;"> 
     <div class="sidebar-menu">
       <center class="profile">
+        {% if picture.url %}
         <img src="{{picture.url}}" alt="">
+        {% else %}
+        <img 
+          src="https://png.pngitem.com/pimgs/s/78-786293_1240-x-1240-0-avatar-profile-icon-png.png" />
+        {% endif %}
+        
           <p>{{ request.user }}</p> 
       </center>
       <li class="item">
