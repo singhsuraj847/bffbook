@@ -132,6 +132,7 @@ ACCOUNT_EMAIL_UNIQUE = True
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Activate Django-Heroku.
