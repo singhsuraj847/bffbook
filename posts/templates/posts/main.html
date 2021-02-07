@@ -22,11 +22,7 @@
             </div>
           </div>
         </div>
-        {% if obj.author.avatar %}
         <img class="ui avatar image" src="{{obj.author.avatar.url}}" />
-        {% else %}
-        <img class="ui avatar image" src="https://png.pngitem.com/pimgs/s/78-786293_1240-x-1240-0-avatar-profile-icon-png.png"/>
-        {% endif %}
         
         {{ obj.author.user }} - {{ obj.created|timesince}} ago
       </div>

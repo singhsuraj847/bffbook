@@ -42,12 +42,7 @@
     <div class="sidebar-menu">
       <a href="{{path_to_my_profile}}">
       <center class="profile">
-        {% if picture.url %}
         <img src="{{picture.url}}" alt="">
-        {% else %}
-        <img 
-          src="https://png.pngitem.com/pimgs/s/78-786293_1240-x-1240-0-avatar-profile-icon-png.png" />
-        {% endif %}
         
           <p>{{ request.user }}</p> 
       </center>
