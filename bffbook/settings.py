@@ -130,6 +130,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_UNIQUE = True
 
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
