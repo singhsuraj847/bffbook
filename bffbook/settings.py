@@ -10,7 +10,7 @@ SECRET_KEY = 'nlyd^235!&zj(o-t%v1n_ba6zb92nwof_5oudyz1l224+ezb5p'
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['surajblog.herokuapp.com/', '127.0.0.1:8000/']
 
 SITE_ID = 1
 
