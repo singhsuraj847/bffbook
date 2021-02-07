@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'nlyd^235!&zj(o-t%v1n_ba6zb92nwof_5oudyz1l224+ezb5p'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['surajblog.herokuapp.com/', '127.0.0.1:8000/']
 
@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -131,7 +131,7 @@ ACCOUNT_EMAIL_UNIQUE = True
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Activate Django-Heroku.
