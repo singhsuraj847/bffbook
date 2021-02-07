@@ -13,12 +13,6 @@ $(document).ready(function () {
       .siblings("sign-in")
       .removeClass("active-sign-up");
   });
-  // $(".new-btn").click(function () {
-  //   $(".sign-in")
-  //     .addClass("active-sign-up")
-  //     .siblings("sign-in")
-  //     .removeClass("active-sign-in");
-  // });
   $(".cancel a").click(function () {
     $(".sign-in").removeClass("active-sign-in");
     $(".sign-in").removeClass("active-sign-up");
